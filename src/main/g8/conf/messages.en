@@ -36,6 +36,7 @@ site.hidden-delete = Delete {0}
 site.hidden-edit = Change {0}
 site.no = No
 site.yes = Yes
+site.continue = Continue
 site.save_and_continue = Save and continue
 site.service_name = $name$
 site.textarea.char_limit = (Limit is {0} characters)
