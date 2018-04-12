@@ -11,15 +11,15 @@
     appConfig = appConfig,
     bodyClasses = None) {
 
+    @components.back_link()
+
+    @components.error_summary(form.errors)
+
+    @components.heading("$className;format="decap"$.heading")
+
+    @components.text("$className;format="decap"$.text")
+
     @helpers.form(action = $className$Controller.onSubmit(mode), 'autoComplete -> "off") {
-
-        @components.back_link()
-
-        @components.error_summary(form.errors)
-
-        @components.heading("$className;format="decap"$.heading")
-
-        @components.text("$className;format="decap"$.text")
 
         @components.input_yes_no(
             field = form("value"),

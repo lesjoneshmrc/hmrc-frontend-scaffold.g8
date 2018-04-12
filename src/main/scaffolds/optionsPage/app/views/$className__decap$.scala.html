@@ -11,11 +11,11 @@
     appConfig = appConfig,
     bodyClasses = None) {
 
+    @components.error_summary(form.errors)
+
+    @components.heading("$className;format="decap"$.heading")
+
     @helpers.form(action = $className$Controller.onSubmit(mode), 'autoComplete -> "off") {
-
-        @components.error_summary(form.errors)
-
-        @components.heading("$className;format="decap"$.heading")
 
         @components.input_radio(
             field = form("value"),
